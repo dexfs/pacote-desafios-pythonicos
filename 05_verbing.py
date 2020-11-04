@@ -12,7 +12,7 @@ Retorne o resultado da string.
 
 def verbing(s):
     verb = s
-    if len(verb) > 3:
+    if len(verb) >= 3:
         if 'ing' in verb:
             return verb + 'ly'
         else:
