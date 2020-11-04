@@ -12,13 +12,11 @@ Retorne o resultado da string.
 
 def verbing(s):
     verb = s
+    suffix = ''
     if len(verb) >= 3:
-        if verb.endswith('ing'):
-            return verb + 'ly'
-        else:
-            return verb + 'ing'
-    else:
-        return verb
+        suffix = 'ly' if verb.endswith('ing') else 'ing'
+
+    return verb + suffix
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
