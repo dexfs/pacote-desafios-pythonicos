@@ -11,8 +11,14 @@ Retorne o resultado da string.
 """
 
 def verbing(s):
-    # +++ SUA SOLUÇÃO +++
-    return
+    verb = s
+    if len(verb) > 3:
+        if 'ing' in verb:
+            return verb + 'ly'
+        else:
+            return verb + 'ing'
+    else:
+        return verb
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
